@@ -1,7 +1,7 @@
 # 23H-vefhonnun
 # verkefnaval
 
-Útlit: Ætla láta hanna líta venjulega út bara á hvítum og svartum grunni ætla öruglega láta það breytast á milli og veit enþá ekki alveg hvaða letur mun samt nota öruglega Arial eða eih n-frekar basic.
+Útlit: Ætla láta hanna líta venjulega út bara á hvítum og svartum grunni ætla öruglega láta það breytast á milli og veit enþá ekki alveg hvaða letur mun samt nota öruglega Arial eða eih frekar basic.
 
 Ég ætla að fjalla um Iphone síma. Iphone símar eru vinsælir snjallsímar frá Apple með hágæða hagnýtisforritum, flottum hönnunum, og hágæða myndavélum. Þeir keyra á iOS stýrikerfinu og bera upp á flókna fjölbreytni af síma af mismunandi stærðum og hæfni, eins og iPhone 13, iPhone SE, og fleira. Fyrsti síminn sem Apple framleiðaði var Iphone 2G árið 2007 og nýjasti Iphone 15 2023.
 
