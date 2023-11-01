@@ -1,4 +1,7 @@
 :root {
+    --bodycolor: rgb(8, 7, 66);
+    --bodyFont:"playfair", "serif";
+    --bodyBg: linear-gradient(62deg, rgb(0, 0, 0)) ;
     --body: rgb(34, 34, 34);
     --a: rgb(19, 104, 112);
     --visited: rgb(33, 140, 150);
