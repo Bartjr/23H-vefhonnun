@@ -1,0 +1,26 @@
+:root {
+    --body: rgb(34, 34, 34);
+    --a: rgb(19, 104, 112);
+    --visited: rgb(33, 140, 150);
+    --hover: rgb(33, 140, 150); 
+    --footerbg: linear-gradient(rgb(183, 232, 236),rgb(125, 221, 230));
+  }
+  
+  
+  body {
+    color: var(--body);
+  }
+  a {
+    color: var(--a); 
+  }
+  a:visited {
+    color: var(--visited); 
+  }
+  a:hover,
+  a:active {
+    color: var(--hover);
+    text-decoration: none;
+  }
+  .footerbg {
+    background-image: var(--footerbg);
+  }

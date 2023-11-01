@@ -1,6 +1,6 @@
 /* Grid
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  col-2, col-3, col-4, col-5, col-6 {
+  .col-2, .col-3, .col-4, .col-5, .col-6 {
     display:grid;
     grid-template-columns: 1fr;
   }
@@ -34,16 +34,8 @@
     }
   }
   @media screen and (min-wdth: 600px) {}
-  @media screen and (min-wdth: 760px) {
-    .col-2, .col-4, .col-6{
-        grid-template-columns: 2fr;
-    }
-  }
-  @media screen and (min-wdth: 960px) {
-    .col-3, .col-5{
-        grid-template-columns: 3fr;
-    }
-  }
+  @media screen and (min-wdth: 760px) {}
+  @media screen and (min-wdth: 960px) {}
   @media screen and (min-wdth: 1280px) {}
   @media screen and (min-wdth: 14200px) {}
   @media screen and (min-wdth: 1600px) {}
