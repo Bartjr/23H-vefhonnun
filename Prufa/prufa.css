@@ -31,10 +31,10 @@ main {
 
 .product-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(4, 1fr); /* 4 rows */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
     gap: 10px;
-    max-width: 900px; /* Adjust the max width as needed */
+    max-width: 900px; 
     padding: 20px;
     margin: auto;
 }
@@ -100,7 +100,7 @@ button.add-to-cart:hover {
 }
 
 .cart:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Add a glow effect on hover */
+    box-shadow: 0 0 10px rgba(14, 62, 255, 0.5); 
 }
 
 .cart h2 {
@@ -138,13 +138,13 @@ button.remove-from-cart:hover {
     background-color: #c9302c;
 }
 .product-link {
-    text-decoration: none; /* Remove underlines from links */
-    color: inherit; /* Inherit text color */
+    text-decoration: none; 
+    color: inherit; 
 }
 img{
     outline: none;
 }
-/* Add this to your existing CSS */
+
 .navbar {
     background-color: #333;
     color: white;
@@ -172,5 +172,51 @@ img{
 }
 
 .nav-list a:hover {
-    color: #0074d9; /* Change color on hover */
+    color: #3029ff; 
 }
+
+
+
+
+
+@media (max-width: 767px) {
+    .product {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .cart {
+        top: 90px; 
+        right: 10px;
+    }
+}
+.dalkar_4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    }
+@media screen and (min-wdth: 600px) {
+    .dalkar_4{
+        grid-template-columns: 1fr;
+    }
+}
+  @media screen and (min-wdth: 760px) {
+    .dalkar_4{
+    grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-wdth: 960px) {
+    .dalkar_4{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (min-wdth: 1280px) {
+    .dalkar_4{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-wdth: 14200px) {
+    .dalkar_4{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }

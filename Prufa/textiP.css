@@ -1,0 +1,164 @@
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 20px 0; 
+}
+
+
+.gridtexti {
+    display: grid;
+    grid-template-columns: 49% 51%; 
+    gap: 20px;
+    max-width: 900px; 
+    margin: auto;
+    padding: 20px;
+}
+
+
+.gridtexti > div {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gridtexti h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0074d9; 
+}
+
+.gridtexti p {
+    font-size: 1.2em;
+    margin: 10px 0; 
+}
+
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-list li {
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #3029ff; 
+}
+
+
+@media (max-width: 767px) {
+    .gridtexti > div {
+        padding: 10px; 
+    }
+
+    .nav-list {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width:48em){
+        
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a b"
+        "a a b"
+        "c c b";
+
+    }
+}
+
+.a {
+    grid-area: a;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+
+
+
+
+
+
+.dalkar_2{
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 10px;
+}
+
+
+
+
+@media screen and (min-width:37.5em){
+
+.dalkar_2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+}
+
+
+@media screen and (min-width:48em){
+
+.dalkar_2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+max-width: 1100px;
+}
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+a:hover{
+color: red;
+}
+a:active{
+text-transform: uppercase;
+}
