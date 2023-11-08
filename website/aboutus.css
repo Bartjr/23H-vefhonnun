@@ -12,7 +12,7 @@
     position: relative;
 }
 
-.welcome-text {
+.hello-text {
     animation: fadeOut 5s ease-in-out forwards;
 }
 
@@ -31,5 +31,33 @@
     }
     100% {
         opacity: 0;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0;
+    }
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer p {
+        text-align: center;
     }
 }

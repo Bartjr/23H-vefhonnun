@@ -53,3 +53,10 @@ function updateCartTotal() {
     const cartTotalElement = document.getElementById('cart-total');
     cartTotalElement.textContent = cartTotal.toFixed(2);
 }
+
+// JavaScript function to redirect to the external checkout page
+function redirectToCheckout() {
+    // Replace 'external_checkout_url' with the actual URL of the checkout page
+    var external_checkout_url = 'https://example.com/checkout'; // Example URL
+
+    window.location.href = external_checkout_url;}
