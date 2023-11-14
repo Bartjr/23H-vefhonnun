@@ -1,0 +1,52 @@
+<!-- checkout.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="checkout.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout-style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="checkout-form" onsubmit="submitOrder(event)">
+            <h1>Checkout</h1>
+
+            <!-- Display cart items -->
+            <ul id="itemsList"></ul>
+
+            <!-- Display total amount -->
+            <div id="totalAmount"></div>
+
+            <!-- User information form -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="creditCard">Credit Card Number:</label>
+            <input type="text" id="creditCard" name="creditCard" placeholder="1234-5678-9012-3456" required>
+
+            <div class="card-details">
+                <div>
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                </div>
+                <div>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <!-- Include checkout.js script -->
+    <script src="checkout.js"></script>
+    <!-- Include skript.js script -->
+    <script src="skript.js"></script>
+</body>
+</html>

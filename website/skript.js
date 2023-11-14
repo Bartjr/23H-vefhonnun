@@ -1,62 +1,60 @@
-// Define the shopping cart and total variables
-const cartItems = [];
-let cartTotal = 0;
+// skript.js
 
-// Function to add items to the cart
-function addToCart(productName, price) {
-    // Create a cart item object
-    const cartItem = {
-        name: productName,
-        price: price
-    };
+let cart = [];
 
-    // Add the item to the cart array
-    cartItems.push(cartItem);
-
-    // Update the cart display
+function addToCart(name, price) {
+    cart.push({ name, price });
     updateCartDisplay();
-
-    // Update the cart total
-    cartTotal += price;
-    updateCartTotal();
 }
 
-// Function to remove items from the cart
 function removeFromCart(index) {
-    const removedItem = cartItems.splice(index, 1)[0];
-    cartTotal -= removedItem.price;
-
-    // Update the cart display and total
+    const removedItem = cart.splice(index, 1)[0];
     updateCartDisplay();
     updateCartTotal();
 }
 
-// Function to update the cart display
 function updateCartDisplay() {
-    const cartList = document.getElementById('cart-items');
-    cartList.innerHTML = '';
+    const cartItemsList = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
 
-    for (let i = 0; i < cartItems.length; i++) {
-        const item = cartItems[i];
-
+    cartItemsList.innerHTML = '';
+    let total = 0;
+    cart.forEach((item, index) => {
         const listItem = document.createElement('li');
         listItem.className = 'cart-item';
-        listItem.innerHTML = `<span>${item.name} - $${item.price.toFixed(2)}</span>
-                             <button class="remove-from-cart" onclick="removeFromCart(${i})">Remove</button>`;
 
-        cartList.appendChild(listItem);
-    }
+        const itemName = document.createElement('span');
+        itemName.textContent = item.name;
+
+        const itemPrice = document.createElement('span');
+        itemPrice.textContent = `$${item.price.toFixed(2)}`;
+
+        const removeButton = document.createElement('button');
+        removeButton.className = 'remove-from-cart';
+        removeButton.textContent = 'Remove';
+        removeButton.addEventListener('click', () => removeFromCart(index));
+
+        listItem.appendChild(itemName);
+        listItem.appendChild(itemPrice);
+        listItem.appendChild(removeButton);
+        cartItemsList.appendChild(listItem);
+
+        total += item.price;
+    });
+
+    cartTotal.textContent = `Total: $${total.toFixed(2)}`;
 }
 
-// Function to update the cart total
 function updateCartTotal() {
     const cartTotalElement = document.getElementById('cart-total');
-    cartTotalElement.textContent = cartTotal.toFixed(2);
+    const total = cart.reduce((sum, item) => sum + item.price, 0);
+    cartTotalElement.textContent = `Total: $${total.toFixed(2)}`;
 }
 
-// JavaScript function to redirect to the external checkout page
 function redirectToCheckout() {
-    // Replace 'external_checkout_url' with the actual URL of the checkout page
-    var external_checkout_url = 'https://example.com/checkout'; // Example URL
+    // Encode the cart data as a JSON string to pass as a query parameter
+    const cartQueryParam = encodeURIComponent(JSON.stringify(cart));
 
-    window.location.href = external_checkout_url;}
+    // Redirect to the checkout.html page with cart as a query parameter
+    window.location.href = `checkout.html?cart=${cartQueryParam}`;
+}
