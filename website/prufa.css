@@ -269,14 +269,43 @@ img{
         }
     }
 
-    
 
 
+    @media screen and (max-width: 768px) {
+        .nav-list {
+            display: none;
+            flex-direction: column;
+            text-align: left;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+        }
 
+        .nav-list.show {
+            display: flex;
+        }
 
+        .nav-list li {
+            width: 100%;
+            text-align: center;
+        }
+    }
 
+    .menu-toggle {
+        display: none;
+    }
 
-
-
-
-    
+    @media screen and (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: left;
+        }
+    }

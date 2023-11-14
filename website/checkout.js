@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
     totalAmountElement.textContent = `Total: $${totalAmount.toFixed(2)}`;
 });
 
+
+function goBack() {
+    window.history.back();
+}
+
 function submitOrder(event) {
     event.preventDefault();
 

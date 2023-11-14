@@ -12,9 +12,7 @@
     position: relative;
 }
 
-.hello-text {
-    animation: fadeOut 5s ease-in-out forwards;
-}
+
 
 .overlay {
     position: absolute;

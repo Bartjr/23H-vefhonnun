@@ -58,3 +58,8 @@ function redirectToCheckout() {
     // Redirect to the checkout.html page with cart as a query parameter
     window.location.href = `checkout.html?cart=${cartQueryParam}`;
 }
+
+function toggleNav() {
+    var navbar = document.getElementById('navbar');
+    navbar.classList.toggle('show');
+}
