@@ -1,4 +1,4 @@
-// skript.js
+
 
 let cart = [];
 
@@ -52,10 +52,10 @@ function updateCartTotal() {
 }
 
 function redirectToCheckout() {
-    // Encode the cart data as a JSON string to pass as a query parameter
+
     const cartQueryParam = encodeURIComponent(JSON.stringify(cart));
 
-    // Redirect to the checkout.html page with cart as a query parameter
+
     window.location.href = `checkout.html?cart=${cartQueryParam}`;
 }
 
