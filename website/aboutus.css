@@ -3,7 +3,6 @@
     padding: 0;
     overflow: hidden;
     background-color: white;
-    color: black;
     font-size: 5em;
     display: flex;
     justify-content: center;
@@ -12,7 +11,9 @@
     position: relative;
 }
 
-
+.footpadding {
+    padding-top: 10px;
+}
 
 .overlay {
     position: absolute;
@@ -32,6 +33,40 @@
     }
 }
 
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+
+.welcome-text {
+    font-size: 3em;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.content-container {
+    font-size: 30px;
+    display: none;
+    padding: 20px;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align content to the top */
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 0; /* Align to the left */
+    width: 100%; /* Occupy the entire width */
+    height: 100vh; /* Occupy the entire height of the viewport */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    font-size: 30px;
+    display: none;
+    padding: 20px;
+    width: 80%; /* Adjust the width based on your preference */
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    text-align: left; /* Align text to the left */
+}
 .footer {
     background-color: #333;
     color: #fff;

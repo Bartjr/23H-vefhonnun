@@ -6,6 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone Store</title>
+
+    <div class="confirmation-dialog" id="confirmationDialog">
+        <p class="message">Do you want to go to the Apple site?</p>
+        <button id="confirmYes">Yes</button>
+        <button id="confirmNo">No</button>
+    </div>
+    <a href="#" class="checkout-logo" id="appleLogo">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <div class="checkout-logo">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <svg width="130px" height="120" viewBox="0 0 500 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+            <g>
+                <path d="M213.803394,167.030943 C214.2452,214.609646 255.542482,230.442639 256,230.644727 C255.650812,231.761357 249.401383,253.208293 234.24263,275.361446 C221.138555,294.513969 207.538253,313.596333 186.113759,313.991545 C165.062051,314.379442 158.292752,301.507828 134.22469,301.507828 C110.163898,301.507828 102.642899,313.596301 82.7151126,314.379442 C62.0350407,315.16201 46.2873831,293.668525 33.0744079,274.586162 C6.07529317,235.552544 -14.5576169,164.286328 13.147166,116.18047 C26.9103111,92.2909053 51.5060917,77.1630356 78.2026125,76.7751096 C98.5099145,76.3877456 117.677594,90.4371851 130.091705,90.4371851 C142.497945,90.4371851 165.790755,73.5415029 190.277627,76.0228474 C200.528668,76.4495055 229.303509,80.1636878 247.780625,107.209389 C246.291825,108.132333 213.44635,127.253405 213.803394,167.030988 M174.239142,50.1987033 C185.218331,36.9088319 192.607958,18.4081019 190.591988,0 C174.766312,0.636050225 155.629514,10.5457909 144.278109,23.8283506 C134.10507,35.5906758 125.195775,54.4170275 127.599657,72.4607932 C145.239231,73.8255433 163.259413,63.4970262 174.239142,50.1987249" fill="#000000"></path>
+            </g>
+        </svg>
+    </div>
+    </a>
+    
     <br>
 </head>
 <body>
@@ -24,21 +42,22 @@
     <main class="dalkar_3 product-container">
         <section>
             <div class="product">
-                <img src="Myndir/image.png" alt="iPhone 13">
+                <img src="Myndir/image-fotor-20231122155536.png" alt="iPhone 13">
+                <div class="color-selection" onclick="showColorOptions('iPhone 13')"></div>
                 <h2>iPhone 13</h2>
                 <p>Price: $499.99</p>
                 <button class="add-to-cart" data-name="iPhone 13" data-price="499.99" onclick="addToCart('iPhone 13', 499.99)">Add to Cart</button>
             </div>
             
             <div class="product">
-                <img src="Myndir/image.png" alt="iPhone 13 Pro">
+                <img src="Myndir/image-fotor-20231122154929.png" alt="iPhone 13 Pro">
                 <h2>iPhone 13 Pro</h2>
                 <p>Price: $599.99</p>
                 <button class="add-to-cart" data-name="iPhone 13 Pro" data-price="599.99" onclick="addToCart('iPhone 13 Pro', 599.99)">Add to Cart</button>
             </div>
         
             <div class="product">
-                <img src="Myndir/image.png" alt="a">
+                <img src="Myndir/image-fotor-20231122155656.png" alt="a">
                 <h2>iPhone 13 Pro max</h2>
                 <p>Price: $699.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="699.99" onclick="addToCart('iPhone 13 Pro max', 699.99)">Add to Cart</button>
@@ -46,19 +65,19 @@
         </section>
         <section>
             <div class="product">
-                <img src="Myndir/image.png" alt="Phone Model 5">
+                <img src="Myndir/image-fotor-20231122155024.png" alt="Phone Model 5">
                 <h2>iPhone 14</h2>
                 <p>Price: $799.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="799.99" onclick="addToCart('iPhone 14', 799.99)">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="Myndir/image.png" alt="Phone Model 6">
+                <img src="Myndir/image-fotor-20231122155040.png" alt="Phone Model 6">
                 <h2>iPhone 14 Pro</h2>
                 <p>Price: $849.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="849.99" onclick="addToCart('iPhone 14 Pro', 849.99)">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="Myndir/image.png" alt="Phone Model 7">
+                <img src="Myndir/image-fotor-20231122155058.png" alt="Phone Model 7">
                 <h2>iPhone 14 Pro max</h2>
                 <p>Price: $899.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="899.99" onclick="addToCart('iPhone 14 Pro max', 899.99)">Add to Cart</button>
@@ -66,19 +85,19 @@
         </section>
         <section>
             <div class="product">
-                <img src="Myndir/image.png" alt="Phone Model 8">
+                <img src="Myndir/image-fotor-20231122154956.png" alt="Phone Model 8">
                 <h2>iPhone 15</h2>
                 <p>Price: $999.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="999.99" onclick="addToCart('iPhone 15', 999.99)">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="Myndir/image.png" alt="Phone Model 8">
+                <img src="Myndir/image-fotor-20231122155632.png" alt="Phone Model 8">
                 <h2>iPhone 15 Pro</h2>
                 <p>Price: $1199.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="1199.99" onclick="addToCart('iPhone 15 Pro', 1199.99)">Add to Cart</button>
             </div>
             <div class="product">
-                <img src="Myndir/image.png" alt="Phone Model 8">
+                <img src="Myndir/image-fotor-20231122154843.png" alt="Phone Model 8">
                 <h2>iPhone 15 Pro max</h2>
                 <p>Price: $1399.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="1399.99" onclick="addToCart('iPhone 15 Pro max', 1399.99)">Add to Cart</button>
