@@ -302,7 +302,7 @@ img{
         color: #3029ff;
     }
 
-    /* Media query for smaller screens */
+
     @media screen and (max-width: 768px) {
         .nav-list {
             display: none;
@@ -310,7 +310,7 @@ img{
             text-align: left;
             width: 100%;
             position: absolute;
-            top: 60px; /* Adjust this value based on your header height */
+            top: 60px;
             left: 0;
             background-color: #333;
         }
@@ -376,13 +376,13 @@ img{
         }
     }
     .checkout-logo {
-        width: 80px; /* Adjust the width as needed */
+        width: 80px; 
         height: auto;
         position: fixed;
-        bottom: 20px; /* Adjust the bottom distance from the bottom */
-        right: 20px; /* Adjust the right distance from the right */
-        z-index: 999; /* Set a high z-index to make sure it appears on top of other elements */
-        cursor: pointer; /* Add this to show cursor as pointer on hover */
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        cursor: pointer;
     }
     
     .confirmation-dialog {
@@ -419,7 +419,6 @@ img{
         cursor: pointer;
     }
     
-    /* Style the confirmation dialog */
     .confirmation-dialog-box {
         background-color: #fff;
         padding: 15px;
