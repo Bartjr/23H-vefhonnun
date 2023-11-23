@@ -41,27 +41,47 @@
     </header>
     <main class="dalkar_3 product-container">
         <section>
-            <div class="product">
+            <div class="product" data-phone="iPhone 13">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 13')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 13', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 13', 'Black')">Black</button>
+
+                </div>
                 <img src="Myndir/image-fotor-20231122155536.png" alt="iPhone 13">
-                <div class="color-selection" onclick="showColorOptions('iPhone 13')"></div>
                 <h2>iPhone 13</h2>
                 <p>Price: $499.99</p>
                 <button class="add-to-cart" data-name="iPhone 13" data-price="499.99" onclick="addToCart('iPhone 13', 499.99)">Add to Cart</button>
             </div>
             
-            <div class="product">
+
+            
+            <div class="product" data-phone="iPhone 13 Pro">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 13 Pro')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 13 Pro', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 13 Pro', 'Black')">Black</button>
+
+                </div>
                 <img src="Myndir/image-fotor-20231122154929.png" alt="iPhone 13 Pro">
                 <h2>iPhone 13 Pro</h2>
                 <p>Price: $599.99</p>
                 <button class="add-to-cart" data-name="iPhone 13 Pro" data-price="599.99" onclick="addToCart('iPhone 13 Pro', 599.99)">Add to Cart</button>
             </div>
-        
-            <div class="product">
-                <img src="Myndir/image-fotor-20231122155656.png" alt="a">
-                <h2>iPhone 13 Pro max</h2>
+            
+            <div class="product" data-phone="iPhone 13 Pro Max">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 13 Pro Max')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 13 Pro Max', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 13 Pro Max', 'Black')">Black</button>
+                </div>
+                <img src="Myndir/image-fotor-20231122155656.png" alt="iPhone 13 Pro Max">
+                <h2>iPhone 13 Pro Max</h2>
                 <p>Price: $699.99</p>
-                <button class="add-to-cart" data-name="Phone Model 1" data-price="699.99" onclick="addToCart('iPhone 13 Pro max', 699.99)">Add to Cart</button>
+                <button class="add-to-cart" data-name="iPhone 13 Pro Max" data-price="699.99" onclick="addToCart('iPhone 13 Pro Max', 699.99)">Add to Cart</button>
             </div>
+
+
         </section>
         <section>
             <div class="product">
@@ -123,6 +143,12 @@
             <p>&copy; 2023 iPhone Store. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
         </div>
     </footer>
+    <div class="modal" id="colorModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeColorModal">&times;</span>
+            <div class="color-options"></div>
+        </div>
+    </div>
 <script src="skript.js"></script>
 </body>
 </html>

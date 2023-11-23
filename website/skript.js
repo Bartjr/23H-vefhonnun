@@ -70,15 +70,15 @@ const confirmationDialog = document.getElementById('confirmationDialog');
 const confirmYes = document.getElementById('confirmYes');
 const confirmNo = document.getElementById('confirmNo');
 
-// Add a click event listener to the logo
+
 appleLogo.addEventListener('click', function (event) {
     event.preventDefault();
 
-    // Show the confirmation dialog
+
     confirmationDialog.style.display = 'block';
 });
 
-// Add click event listeners to the Yes and No buttons
+
 confirmYes.addEventListener('click', function () {
     window.open('https://www.apple.com', '_blank');
     confirmationDialog.style.display = 'none';
@@ -88,41 +88,18 @@ confirmNo.addEventListener('click', function () {
     confirmationDialog.style.display = 'none';
 });
 
-// Add a function to show color options
-function showColorOptions(phoneName) {
-    // Customize this part based on your color options
-    const colorOptions = ['Red', 'Blue', 'Green'];
 
-    // Show a confirmation dialog with color options
-    const confirmationDialog = document.getElementById('confirmationDialog');
-    const dialogBox = confirmationDialog.querySelector('.confirmation-dialog-box');
-    const message = dialogBox.querySelector('.message');
-    const buttonsContainer = dialogBox.querySelector('.buttons-container');
-
-    // Clear previous buttons
-    buttonsContainer.innerHTML = '';
-
-    // Set the message
-    message.textContent = `Choose a color for ${phoneName}:`;
-
-    // Create buttons for each color option
-    colorOptions.forEach(color => {
-        const button = document.createElement('button');
-        button.textContent = color;
-        button.addEventListener('click', () => selectColor(phoneName, color));
-        buttonsContainer.appendChild(button);
-    });
-
-    // Show the confirmation dialog
-    confirmationDialog.style.display = 'flex';
+function toggleColorOptions(phone) {
+    const colorOptions = document.querySelector(`[data-phone="${phone}"] .color-options`);
+    colorOptions.style.display = (colorOptions.style.display === 'block') ? 'none' : 'block';
 }
 
-// Add a function to handle color selection
-function selectColor(phoneName, color) {
-    // Customize this part based on your logic for handling color selection
-    alert(`You chose ${color} color for ${phoneName}`);
-    
-    // Close the confirmation dialog
-    const confirmationDialog = document.getElementById('confirmationDialog');
-    confirmationDialog.style.display = 'none';
+function selectColor(phone, color) {
+    const colorCircle = document.querySelector(`[data-phone="${phone}"] .color-circle`);
+    colorCircle.style.backgroundColor = color;
+    toggleColorOptions(phone); 
+}
+
+function closeColorModal() {
+    document.getElementById('colorModal').style.display = 'none';
 }
