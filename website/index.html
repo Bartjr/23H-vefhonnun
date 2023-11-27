@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
-    <link rel="stylesheet" href="textiP.css">
-    <link rel="stylesheet" href="prufa.css">
+    <link rel="stylesheet" href="css/textiP.css">
+    <link rel="stylesheet" href="css/prufa.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +46,10 @@
                 <div class="color-options">
                     <button onclick="selectColor('iPhone 13', 'White')">White</button>
                     <button onclick="selectColor('iPhone 13', 'Black')">Black</button>
-
+                    <button onclick="selectColor('iPhone 13', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 13', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 13', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 13', 'Blue')">Blue</button>
                 </div>
                 <img src="Myndir/image-fotor-20231122155536.png" alt="iPhone 13">
                 <h2>iPhone 13</h2>
@@ -61,7 +64,10 @@
                 <div class="color-options">
                     <button onclick="selectColor('iPhone 13 Pro', 'White')">White</button>
                     <button onclick="selectColor('iPhone 13 Pro', 'Black')">Black</button>
-
+                    <button onclick="selectColor('iPhone 13 Pro', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 13 Pro', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 13 Pro', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 13 Pro', 'Blue')">Blue</button>
                 </div>
                 <img src="Myndir/image-fotor-20231122154929.png" alt="iPhone 13 Pro">
                 <h2>iPhone 13 Pro</h2>
@@ -74,6 +80,10 @@
                 <div class="color-options">
                     <button onclick="selectColor('iPhone 13 Pro Max', 'White')">White</button>
                     <button onclick="selectColor('iPhone 13 Pro Max', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 13 Pro Max', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 13 Pro Max', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 13 Pro Max', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 13 Pro Max', 'Blue')">Blue</button>
                 </div>
                 <img src="Myndir/image-fotor-20231122155656.png" alt="iPhone 13 Pro Max">
                 <h2>iPhone 13 Pro Max</h2>
@@ -84,19 +94,46 @@
 
         </section>
         <section>
-            <div class="product">
+            <div class="product" data-phone="iPhone 14">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 14')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 14', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 14', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 14', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 14', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 14', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 14', 'Blue')">Blue</button>
+                </div>
                 <img src="Myndir/image-fotor-20231122155024.png" alt="Phone Model 5">
                 <h2>iPhone 14</h2>
                 <p>Price: $799.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="799.99" onclick="addToCart('iPhone 14', 799.99)">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" data-phone="iPhone 14 Pro">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 14 Pro')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 14 Pro', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 14 Pro', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 14 Pro', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 14 Pro', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 14 Pro', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 14 Pro', 'Blue')">Blue</button>
+                </div>
                 <img src="Myndir/image-fotor-20231122155040.png" alt="Phone Model 6">
                 <h2>iPhone 14 Pro</h2>
                 <p>Price: $849.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="849.99" onclick="addToCart('iPhone 14 Pro', 849.99)">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" data-phone="iPhone 14 Pro Max">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 14 Pro Max')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 14 Pro Max', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 14 Pro Max', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 14 Pro Max', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 14 Pro Max', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 14 Pro Max', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 14 Pro Max', 'Blue')">Blue</button>
+                </div>
                 <img src="Myndir/image-fotor-20231122155058.png" alt="Phone Model 7">
                 <h2>iPhone 14 Pro max</h2>
                 <p>Price: $899.99</p>
@@ -104,19 +141,46 @@
             </div>
         </section>
         <section>
-            <div class="product">
+            <div class="product" data-phone="iPhone 15">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 15')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 15', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 15', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 15', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 15', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 15', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 15', 'Blue')">Blue</button>
+                </div>
                 <img src="Myndir/image-fotor-20231122154956.png" alt="Phone Model 8">
                 <h2>iPhone 15</h2>
                 <p>Price: $999.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="999.99" onclick="addToCart('iPhone 15', 999.99)">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" data-phone="iPhone 15 Pro">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 15 Pro')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 15 Pro', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 15 Pro', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 15 Pro', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 15 Pro', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 15 Pro', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 15 Pro', 'Blue')">Blue</button>
+                </div>
                 <img src="Myndir/image-fotor-20231122155632.png" alt="Phone Model 8">
                 <h2>iPhone 15 Pro</h2>
                 <p>Price: $1199.99</p>
                 <button class="add-to-cart" data-name="Phone Model 1" data-price="1199.99" onclick="addToCart('iPhone 15 Pro', 1199.99)">Add to Cart</button>
             </div>
-            <div class="product">
+            <div class="product" data-phone="iPhone 15 Pro Max">
+                <div class="color-circle" onclick="toggleColorOptions('iPhone 15 Pro Max')"></div>
+                <div class="color-options">
+                    <button onclick="selectColor('iPhone 15 Pro Max', 'White')">White</button>
+                    <button onclick="selectColor('iPhone 15 Pro Max', 'Black')">Black</button>
+                    <button onclick="selectColor('iPhone 15 Pro Max', 'Silver')">Silver</button>
+                    <button onclick="selectColor('iPhone 15 Pro Max', 'Gold')">Gold</button>
+                    <button onclick="selectColor('iPhone 15 Pro Max', 'Red')">Red</button>
+                    <button onclick="selectColor('iPhone 15 Pro Max', 'Blue')">Blue</button>
+                </div>
                 <img src="Myndir/image-fotor-20231122154843.png" alt="Phone Model 8">
                 <h2>iPhone 15 Pro max</h2>
                 <p>Price: $1399.99</p>
@@ -149,6 +213,6 @@
             <div class="color-options"></div>
         </div>
     </div>
-<script src="skript.js"></script>
+<script src="javascript/skript.js"></script>
 </body>
 </html>

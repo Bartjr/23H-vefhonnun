@@ -1,13 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
 
-    const welcomeContainer = document.querySelector('.welcome-container');
-    const contentContainer = document.querySelector('.content-container');
-
-
-    function toggleVisibility() {
-        welcomeContainer.style.display = 'none';
-        contentContainer.style.display = 'block';
-    }
-
-    setTimeout(toggleVisibility, 5000); 
-});
+function toggleTeamInfo(teamId) {
+    const teamInfo = document.getElementById(teamId + '-info');
+    teamInfo.classList.toggle('active');
+}
