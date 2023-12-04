@@ -10,9 +10,14 @@ h1, h2 {
     color: #ffffff;
 }
 
+.p1{
+    color: #fff;
+}
+
+
 p {
     line-height: 1.6;
-    color: #7c7c7c;
+    color: #000000;
 }
 
 .container {
@@ -22,6 +27,7 @@ p {
 
 a{
     color: black;
+    text-decoration: underline;
 }
 
 
@@ -97,3 +103,31 @@ a{
         text-align: center;
     }
 }
+
+
+span{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.essential_annoucement_running_line_wrapper_cdb7e78c-ab26-487e-95af-e0f22ccffa02 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.essential_annoucement_bar_running_line_title_cdb7e78c-ab26-487e-95af-e0f22ccffa02 {
+  display: inline-block;
+  animation: scrollText 50s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(90%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  

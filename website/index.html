@@ -25,6 +25,7 @@
     </a>
     
     <br>
+    
 </head>
 <body>
     <header>
@@ -39,9 +40,14 @@
             </ul>
         </div>
     </header>
+
+
+
+
+    
     <main class="dalkar_3 product-container">
         <section>
-            <div class="product" data-phone="iPhone 13">
+            <div class="product" data-phone="iPhone 13" data-price-usd="499.99">
                 <div class="color-circle" onclick="toggleColorOptions('iPhone 13')"></div>
                 <div class="color-options">
                     <button onclick="selectColor('iPhone 13', 'White')">White</button>
@@ -53,7 +59,7 @@
                 </div>
                 <img src="Myndir/image-fotor-20231122155536.png" alt="iPhone 13">
                 <h2>iPhone 13</h2>
-                <p>Price: $499.99</p>
+                <p class="price" data-currency="USD" data-price="499.99">Price: $499.99</p>
                 <button class="add-to-cart" data-name="iPhone 13" data-price="499.99" onclick="addToCart('iPhone 13', 499.99)">Add to Cart</button>
             </div>
             
@@ -90,9 +96,8 @@
                 <p>Price: $699.99</p>
                 <button class="add-to-cart" data-name="iPhone 13 Pro Max" data-price="699.99" onclick="addToCart('iPhone 13 Pro Max', 699.99)">Add to Cart</button>
             </div>
-
-
         </section>
+        
         <section>
             <div class="product" data-phone="iPhone 14">
                 <div class="color-circle" onclick="toggleColorOptions('iPhone 14')"></div>

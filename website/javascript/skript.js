@@ -103,3 +103,28 @@ function selectColor(phone, color) {
 function closeColorModal() {
     document.getElementById('colorModal').style.display = 'none';
 }
+
+
+
+
+function changeCurrency(newCurrency) {
+    const exchangeRates = {
+      USD: 1,
+      CAD: 1.28, // Example exchange rate for CAD
+      EUR: 0.85, // Example exchange rate for EUR
+      GBP: 0.73, // Example exchange rate for GBP
+      JPY: 113.25, // Example exchange rate for JPY
+      // Add more exchange rates...
+    };
+
+    const productListings = document.getElementById('productListings').getElementsByClassName('product');
+    const currentCurrency = document.getElementById('currentCurrency').value;
+
+    for (const product of productListings) {
+      const priceInUSD = parseFloat(product.dataset.priceUsd);
+      const convertedPrice = priceInUSD * exchangeRates[newCurrency] / exchangeRates[currentCurrency];
+      product.innerText = `${product.innerText} - ${newCurrency} ${convertedPrice.toFixed(2)}`;
+    }
+
+    document.getElementById('currentCurrency').value = newCurrency;
+  }

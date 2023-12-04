@@ -28,6 +28,30 @@
         </svg>
     </div>
     </a>
+    <style type="text/css">
+        .LoadingBar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            opacity: 0;
+            background: var(--tg-sys-color-on-background);
+            transition: width 0.25s ease-in-out;
+            z-index: 50;
+            pointer-events: none;
+        }
+          
+        .LoadingBar.Visible {
+            opacity: 1;
+        }
+          
+        @media screen and (min-width: 1280px) {
+            .LoadingBar {
+                height: 3px;
+            }
+        }
+    </style>
 
     <header>
         <h1 class="paddingheader">IPHONE STORE</h1>
@@ -40,10 +64,10 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-
         <title>About Us - iPhone Store</title>
     </header>
-
+    <div class="essential_annoucement_bar_wrapper essential_annoucement_bar_wrapper_cdb7e78c-ab26-487e-95af-e0f22ccffa02 essential_annoucement_bar_wrapper_cdb7e78c-ab26-487e-95af-e0f22ccffa02_ top_page top_page_styles"><div class="essential_annoucement_main_content_wrapper_cdb7e78c-ab26-487e-95af-e0f22ccffa02"><div class="essential_annoucement_titles_outside_wrapper_cdb7e78c-ab26-487e-95af-e0f22ccffa02"><div class="essential_annoucement_running_line_wrapper_cdb7e78c-ab26-487e-95af-e0f22ccffa02"><div class="essential_annoucement_bar_running_line_title_cdb7e78c-ab26-487e-95af-e0f22ccffa02"><span>BLACK FRIDAY (50% OFF)</span><span>BLACK FRIDAY (50% OFF)<span>BLACK FRIDAY (50% OFF)</span><span>BLACK FRIDAY (50% OFF)</span><span>BLACK FRIDAY (50% OFF)</span></div></div></div>
+    
     <main>
         <div class="container">
             <h2>Welcome to iPhone Store</h2>
@@ -147,8 +171,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p>2023 iPhone Store. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> <br>
-                <center class="footpadding"><p>Contact us: <a href="mailto:info@iphonecompany.com">info@iphonecompany.com</a></p></center>
+            <p class="p1">2023 iPhone Store. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> <br>
+                <center class="footpadding"><p class="p1">Contact us: <a href="mailto:info@iphonecompany.com">info@iphonecompany.com</a></p></center>
             </p>
         </div>
     </footer>
