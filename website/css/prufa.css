@@ -7,7 +7,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f7f7f7;
     position: relative;
-}
+} 
 
 header {
     background-color: #333;
@@ -118,9 +118,6 @@ button.add-to-cart:hover {
     border-bottom: 1px solid #ddd;
 }
 
-
-
-
 .cart-item span {
     margin-right: 10px;
 }
@@ -137,8 +134,6 @@ button.add-to-cart:hover {
 .remove-from-cart:hover {
     background-color: #ff0000;
 } 
-
-
 
 .cart-item {
     display: flex;
