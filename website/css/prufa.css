@@ -363,6 +363,7 @@ img{
     
     .footer a:hover {
         text-decoration: underline;
+        color: rgb(6, 0, 179);
     }
     
     @media (max-width: 768px) {
@@ -401,11 +402,6 @@ img{
         margin-right: 10px;
         cursor: pointer;
     }
-    
-
-
-
-
 
 
     .product {
@@ -421,7 +417,7 @@ img{
         background-color: gray;
         border-radius: 50%;
         cursor: pointer;
-        z-index: 2; /* Ensure the circle is above the image */
+        z-index: 2;
     }
     
     .color-options {
@@ -440,3 +436,4 @@ img{
         display: block;
         margin-bottom: 8px;
     }
+
