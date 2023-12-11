@@ -251,18 +251,6 @@ img{
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
-    
-    @media screen and (min-width: 1280px) {
-        .dalkar_3 {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
-    
-    @media screen and (max-width: 1420px) {
-        .dalkar_4 {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-    }
 
 
 
@@ -437,3 +425,51 @@ img{
         margin-bottom: 8px;
     }
 
+    body.welcomeW {
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    .PLUH {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #2e2d2d;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation:fadeOuty 4s ease-in-out 2s forwards;
+    }
+    
+    .PLUH h1 {
+        color: #fff; 
+        font-size: 50px; 
+        opacity: 0; 
+        transform: translateY(-20px); 
+        animation: textAnimationy 1.5s ease-in-out forwards, fadeOuty 1.5s ease-in-out 3s forwards;
+    }
+    
+    @keyframes textAnimationy {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes fadeOuty {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            overflow: none;
+            display: none;
+            opacity: 0;
+        }
+    }
